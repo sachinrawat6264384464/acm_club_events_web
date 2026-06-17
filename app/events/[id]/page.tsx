@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: EventPageProps): Promise<Meta
   const event = eventsData.find((e) => e.id === params.id);
   if (!event) {
     return {
-      title: "Event Not Found | ACM",
+      title: "Event Not Found | AITR ACM",
     };
   }
   return {
-    title: `${event.title} - Gallery | ACM Student Chapter`,
+    title: `${event.title} - Gallery | AITR ACM Student Chapter`,
     description: event.shortDesc,
     openGraph: {
       title: event.title,

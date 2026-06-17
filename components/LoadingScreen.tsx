@@ -76,7 +76,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete 
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-lg font-semibold tracking-widest text-acm-royal uppercase mb-6"
           >
-            ACM Student Chapter
+            AITR ACM Student Chapter
           </motion.h2>
 
           {/* Modern Progress Bar Container */}

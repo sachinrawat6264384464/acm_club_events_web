@@ -86,7 +86,7 @@ export default function Home() {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0"
                       >
-                        Welcome to ACM Student Chapter. We are a community of passionate programmers, designers, and tech enthusiasts building computational solutions for real-world issues.
+                      Welcome to AITR ACM Student Chapter. We are a community of passionate programmers, designers, and tech enthusiasts building computational solutions for real-world issues.
                       </motion.p>
                     </div>
 
@@ -139,8 +139,8 @@ export default function Home() {
                     {/* Layered Image container */}
                     <div className="relative w-full max-w-md md:max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group border-4 border-white">
                       <Image
-                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1200"
-                        alt="ACM Student Tech Workshop"
+                        src="/events/slider2.jpeg"
+                        alt="AITR ACM Student Tech Workshop"
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -188,7 +188,7 @@ export default function Home() {
                       About Us
                     </span>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-acm-dark tracking-tight">
-                      Why Join ACM?
+                      Why Join AITR ACM?
                     </h2>
                     <p className="text-gray-500 text-sm md:text-base leading-relaxed">
                       We offer a collaborative platform for students to learn state-of-the-art technologies, build real projects, participate in coding contests, and find professional growth opportunities.

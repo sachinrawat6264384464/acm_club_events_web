@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar, ArrowUpRight } from "lucide-react";
+import { Calendar, ArrowUpRight, Clock } from "lucide-react";
 import { EventItem } from "@/data/events";
 
 interface EventCardProps {
@@ -41,10 +41,18 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
       {/* Card Info */}
       <div className="p-5 flex-grow flex flex-col justify-between">
         <div className="space-y-2.5">
-          {/* Date */}
-          <div className="flex items-center text-xs text-gray-500 font-semibold space-x-1.5">
-            <Calendar size={13} className="text-acm-light" />
-            <span>{event.date}</span>
+          {/* Date & Time */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-gray-500 font-semibold">
+            <div className="flex items-center space-x-1.5">
+              <Calendar size={13} className="text-acm-light" />
+              <span>{event.date}</span>
+            </div>
+            {event.time && (
+              <div className="flex items-center space-x-1.5 border-l border-slate-200 pl-3">
+                <Clock size={13} className="text-acm-light" />
+                <span>{event.time}</span>
+              </div>
+            )}
           </div>
 
           {/* Title */}

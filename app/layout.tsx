@@ -15,9 +15,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "ACM Student Chapter | Empowering Student Developers",
-  description: "Official web portal of the ACM Student Chapter. Discover workshops, capture the flag contests, hackathons, and visual photo archives of computing excellence.",
-  keywords: "ACM, Student Chapter, Coding, Hackathon, AI Workshop, Computer Science, Coding Club, Web Development",
+  title: "AITR ACM Student Chapter | Empowering Student Developers",
+  description: "Official web portal of the AITR ACM Student Chapter. Discover workshops, capture the flag contests, hackathons, and visual photo archives of computing excellence.",
+  keywords: "AITR ACM, Student Chapter, Coding, Hackathon, AI Workshop, Computer Science, Coding Club, Web Development",
   authors: [{ name: "Sachin Rawat" }],
 };
 

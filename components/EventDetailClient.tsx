@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
+import { ArrowLeft, Calendar, Tag, ChevronLeft, ChevronRight, X, ZoomIn, Clock, MapPin } from "lucide-react";
 import { EventItem } from "@/data/events";
 
 interface EventDetailClientProps {
@@ -77,6 +77,18 @@ export default function EventDetailClient({ event }: EventDetailClientProps) {
                   <Calendar size={12} />
                   <span>{event.date}</span>
                 </span>
+                {event.time && (
+                  <span className="inline-flex items-center space-x-1 px-3 py-1 bg-gray-50 border border-gray-100 text-gray-500 rounded-full text-xs font-medium">
+                    <Clock size={12} />
+                    <span>{event.time}</span>
+                  </span>
+                )}
+                {event.venue && (
+                  <span className="inline-flex items-center space-x-1 px-3 py-1 bg-gray-50 border border-gray-100 text-gray-500 rounded-full text-xs font-medium">
+                    <MapPin size={12} />
+                    <span>{event.venue}</span>
+                  </span>
+                )}
               </div>
 
               <h1 className="text-3xl md:text-4xl font-extrabold text-acm-dark tracking-tight leading-tight">

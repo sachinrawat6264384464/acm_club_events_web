@@ -14,7 +14,7 @@ export const Footer = () => {
           <div className="flex items-center space-x-3">
             <AcmLogo size={45} className="bg-white rounded-full p-0.5" />
             <div>
-              <h3 className="font-bold text-lg text-white tracking-tight">ACM</h3>
+              <h3 className="font-bold text-lg text-white tracking-tight">AITR ACM</h3>
               <p className="text-xs text-slate-400 font-mono tracking-widest uppercase">Student Chapter</p>
             </div>
           </div>
@@ -82,7 +82,7 @@ export const Footer = () => {
       {/* Developer Credit Footer Bottom */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 space-y-4 md:space-y-0">
         <div>
-          &copy; {currentYear} ACM Student Chapter. All rights reserved.
+          &copy; {currentYear} AITR ACM Student Chapter. All rights reserved.
         </div>
         
         {/* Developer Credit Requested */}

@@ -48,7 +48,7 @@ export const Navbar = () => {
           <AcmLogo size={40} className="transition-transform duration-500 group-hover:rotate-[360deg]" />
           <div className="flex flex-col">
             <span className="text-lg font-bold text-acm-dark tracking-tight leading-none group-hover:text-acm-royal transition-colors">
-              ACM
+              AITR ACM
             </span>
             <span className="text-[10px] text-gray-500 font-medium tracking-widest uppercase">
               Student Chapter
