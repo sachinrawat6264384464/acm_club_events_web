@@ -116,19 +116,15 @@ export default function Home() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.8, delay: 0.5 }}
-                      className="grid grid-cols-3 gap-6 pt-4 border-t border-gray-100 max-w-md mx-auto lg:mx-0"
+                      className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100 max-w-sm mx-auto lg:mx-0"
                     >
                       <div>
-                        <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">300+</h4>
+                        <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">50+</h4>
                         <p className="text-xs text-gray-500 font-medium">Members</p>
                       </div>
                       <div>
                         <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">25+</h4>
                         <p className="text-xs text-gray-500 font-medium">Events Yearly</p>
-                      </div>
-                      <div>
-                        <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">15+</h4>
-                        <p className="text-xs text-gray-500 font-medium">Hackathon Wins</p>
                       </div>
                     </motion.div>
                   </div>
