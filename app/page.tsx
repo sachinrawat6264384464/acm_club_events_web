@@ -137,17 +137,15 @@ export default function Home() {
                     className="lg:col-span-6 relative flex justify-center"
                   >
                     {/* Layered Image container */}
-                    <div className="relative w-full max-w-md md:max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group border-4 border-white">
+                    <div className="relative w-full max-w-xl aspect-[16/10] rounded-3xl overflow-hidden shadow-2xl group border-4 border-white bg-white">
                       <Image
                         src="/events/slider2.jpeg"
                         alt="AITR ACM Student Tech Workshop"
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="object-contain transition-transform duration-700 group-hover:scale-105"
                         priority
                       />
-                      {/* Dark overlay grid for look */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                     </div>
 
                     {/* Interactive Floating Badges */}
