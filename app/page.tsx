@@ -14,6 +14,11 @@ import { Code2, Cpu, Trophy, Users2, ArrowRight } from "lucide-react";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    setShowAll(false);
+  }, [selectedCategory]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -116,7 +121,7 @@ export default function Home() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.8, delay: 0.5 }}
-                      className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100 max-w-sm mx-auto lg:mx-0"
+                      className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100 max-w-sm mx-auto lg:mx-0"
                     >
                       <div>
                         <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">50+</h4>
@@ -125,6 +130,10 @@ export default function Home() {
                       <div>
                         <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">25+</h4>
                         <p className="text-xs text-gray-500 font-medium">Events Yearly</p>
+                      </div>
+                      <div>
+                        <h4 className="text-2xl md:text-3xl font-extrabold text-acm-royal">{eventsData.length}</h4>
+                        <p className="text-xs text-gray-500 font-medium">Total Events</p>
                       </div>
                     </motion.div>
                   </div>
@@ -242,8 +251,11 @@ export default function Home() {
                       <span className="text-xs font-bold text-acm-royal tracking-widest uppercase bg-acm-royal/5 px-3 py-1 rounded-full">
                         Chapters Archive
                       </span>
-                      <h2 className="text-3xl md:text-4xl font-extrabold text-acm-dark tracking-tight">
-                        Our Events
+                      <h2 className="text-3xl md:text-4xl font-extrabold text-acm-dark tracking-tight flex items-center justify-center lg:justify-start gap-2.5">
+                        <span>Our Events</span>
+                        <span className="text-xs px-2.5 py-1 bg-acm-royal/10 text-acm-royal rounded-full font-bold">
+                          {eventsData.length}
+                        </span>
                       </h2>
                       <p className="text-gray-500 text-sm max-w-xl">
                         Click on any card to view its corresponding multi-image photo gallery, details, and schedules.
@@ -279,11 +291,24 @@ export default function Home() {
                     <AnimatePresence mode="popLayout">
                       {eventsData
                         .filter((event) => selectedCategory === "All" || event.category === selectedCategory)
+                        .slice(0, showAll ? undefined : 8)
                         .map((event, index) => (
                           <EventCard key={event.id} event={event} index={index} />
                         ))}
                     </AnimatePresence>
                   </motion.div>
+
+                  {/* Show More Button */}
+                  {eventsData.filter((event) => selectedCategory === "All" || event.category === selectedCategory).length > 8 && (
+                    <div className="flex justify-center mt-12">
+                      <button
+                        onClick={() => setShowAll(!showAll)}
+                        className="px-8 py-3.5 bg-white border border-slate-200 text-gray-700 font-bold rounded-full hover:bg-slate-50 hover:text-acm-royal shadow-sm hover:shadow-md hover:scale-105 active:scale-95 transition-all duration-200"
+                      >
+                        {showAll ? "Show Less" : "Show More"}
+                      </button>
+                    </div>
+                  )}
                 </div>
               </section>
             </main>

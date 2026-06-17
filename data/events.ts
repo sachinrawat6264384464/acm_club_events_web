@@ -13,6 +13,18 @@ export interface EventItem {
 
 export const eventsData: EventItem[] = [
   {
+    id: "secure-coding-workshop-2026",
+    title: "SECURE CODING & CODE REVIEW WORKSHOP",
+    category: "Workshop",
+    date: "May 26th, 2026",
+    time: "11:00 AM Onwards",
+    venue: "Acropolis Institute of Technology & Research, Indore",
+    shortDesc: "Hands-on workshop on secure coding, code reviews, and OWASP Top 10 vulnerabilities led by an Offensive Security Expert.",
+    longDesc: "⚡ Think your code is secure? What if a single vulnerability is all it takes for an attacker to break in? 👀\n\nThe AITR ACM, AITR ACM-W & AITR ACM SIGAI Student Chapters, in collaboration with Indore BSides, organized an exclusive hands-on workshop on Secure Coding & Code Review led by Prathmesh Dharkar, Offensive Security Expert.\n\n🔐 Participants explored real-world vulnerabilities, OWASP Top 10, insecure Python & Java exploits, supply chain attacks, and competed in a fast-paced CTF session.\n\nStudents got to learn how hackers think, and how developers can build safer systems. 🚀\n\n#CyberSecurity #SecureCoding #CTF #EthicalHacking #ACMIndia #CyberAwareness",
+    coverImage: "/events/secure coding  WORKSHOP.png",
+    galleryImages: ["/events/secure coding  WORKSHOP.png"]
+  },
+  {
     id: "zero-day-2026",
     title: "ZERO DAY 2026",
     category: "Competition",
@@ -47,6 +59,18 @@ export const eventsData: EventItem[] = [
     longDesc: "The Department of Computer Science and Engineering, in collaboration with the AITR ACM, AITR ACM-W, and SIGAI Student Chapters, organized an AITR ACM Eminent Speaker Program (ESP) featuring Prof. (Dr.) Abhijath Vichare.\n\nThis session focused on exposing students to advanced concepts in operating systems and system-level programming. Key highlights included:\n- Understanding core architecture of operating systems\n- Introduction to kernel design and system-level abstraction\n- Step-by-step approach to building a basic operating system\n- Insights into memory management, process handling, and hardware interaction\n- Real-world challenges in OS development and debugging\n\nThe speaker emphasized hands-on learning and system-level thinking, encouraging students to explore how software interacts directly with hardware.",
     coverImage: "/events/image3.png",
     galleryImages: ["/events/image3.png"]
+  },
+  {
+    id: "prayatna-3.0",
+    title: "PRAYATNA 3.0",
+    category: "Hackathon",
+    date: "March 16th, 17th & 18th, 2026",
+    time: "36 Hours",
+    venue: "Acropolis Institute of Technology & Research, Indore",
+    shortDesc: "National-level 36-hour hackathon bringing together innovators across India. Accommodations, transportation, and food covered.",
+    longDesc: "𝗣𝗥𝗔𝗬𝗔𝗧𝗡𝗔 has always been about turning intent into impact. 🚀\n\nThis March, the journey continued.\n\nThe AITR ACM, AITR ACM-W & AITR ACM SIGAI Student Chapters and IEEE MP Section proudly organized PRAYATNA 3.0, a 36-hour National-Level Hackathon bringing together innovators from universities across India.\n\n⚡ Event Highlights:\n◉ Problem statements across AI-ML, Web, App Development, Blockchain, Cybersecurity, Civil Engineering & more\n◉ Guidance from experienced industry mentors\n◉ A stage where execution truly matters\n\n🍴 Meals were provided to stay fueled throughout the hackathon.\n🏨 Accommodation was covered with on-campus stay.\nTransportation assistance and smooth travel support was provided within Indore.\n\nRegistration Fee: ₹300 per team\nWebsite: https://prayatna3.vercel.app/\n\nPrayatna se sab mumkin hai. 🔥",
+    coverImage: "/events/pyatna.jpeg",
+    galleryImages: ["/events/pyatna.jpeg"]
   },
   {
     id: "acroset-2025",
@@ -128,7 +152,7 @@ export const eventsData: EventItem[] = [
     time: "8:30 AM to 10:30 AM",
     venue: "Lab 120, Block 2, AITR",
     shortDesc: "A hands-on workshop focused on developing internet-of-things devices, microcontrollers, and automation projects.",
-    longDesc: "AITR ACM and AITR ACM-W student chapter in collaboration with UiPath Student Community AITR proudly presents SmartSculpt 2.0: A Hands-on Workshop on IoT\n\n𝗘𝘃𝗲𝗻𝘁 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:\nHands-on Projects ✨\nInteractive Sessions 🏅\n\n💰 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗙𝗲𝗲: Only ₹50! (Limited seats available)\n🍲 𝗥𝗲𝗳𝗿𝗲𝘀𝗵𝗺𝗲𝗻𝘁𝘀 𝗜𝗻𝗰𝗹𝘂𝗱𝗲𝗱!\n\nDon't miss this opportunity to gain knowledge and have some fun while learning! 🌐",
+    longDesc: "AITR ACM and AITR ACM-W student chapter in collaboration with UiPath Student Community AITR proudly presents SmartSculpt 2.0: A Hands-on Workshop on IoT\n\n𝗘𝘃𝗲𝗻𝘁 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀:\nHands-on Projects ✨\nInteractive Sessions 🏅\n\n💰 奉𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻 𝗙𝗲𝗲: Only ₹50! (Limited seats available)\n🍲 𝗥𝗲𝗳𝗿𝗲𝘀𝗵𝗺𝗲𝗻𝘁𝘀 𝗜𝗻𝗰𝗹𝘂𝗱𝗲𝗱!\n\nDon't miss this opportunity to gain knowledge and have some fun while learning! 🌐",
     coverImage: "/events/image6.png",
     galleryImages: ["/events/image6.png"]
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AcmLogo } from "./AcmLogo";
-import { Github, Linkedin, Mail, Globe, Code } from "lucide-react";
+import { Linkedin, Instagram, Youtube, Code } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,18 +22,33 @@ export const Footer = () => {
             Empowering students to innovate, collaborate, and push the boundaries of computer science. Together we code the future.
           </p>
           {/* Social Links */}
-          <div className="flex items-center space-x-4 pt-2">
-            <a href="#" className="p-2 bg-slate-900 hover:bg-acm-royal hover:text-white rounded-lg transition-colors" aria-label="Github">
-              <Github size={18} />
+          <div className="flex items-center space-x-3.5 pt-2">
+            <a 
+              href="https://www.instagram.com/aitr_acm?igsh=NXdidHYxdXl3cm1w" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-xl shadow-md hover:scale-110 hover:shadow-lg active:scale-95 transition-all duration-300 flex items-center justify-center" 
+              aria-label="Instagram"
+            >
+              <Instagram size={18} />
             </a>
-            <a href="#" className="p-2 bg-slate-900 hover:bg-acm-royal hover:text-white rounded-lg transition-colors" aria-label="LinkedIn">
+            <a 
+              href="https://www.linkedin.com/company/acm-aitr/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-[#0A66C2] text-white rounded-xl shadow-md hover:scale-110 hover:shadow-lg active:scale-95 transition-all duration-300 flex items-center justify-center" 
+              aria-label="LinkedIn"
+            >
               <Linkedin size={18} />
             </a>
-            <a href="#" className="p-2 bg-slate-900 hover:bg-acm-royal hover:text-white rounded-lg transition-colors" aria-label="Website">
-              <Globe size={18} />
-            </a>
-            <a href="#" className="p-2 bg-slate-900 hover:bg-acm-royal hover:text-white rounded-lg transition-colors" aria-label="Mail">
-              <Mail size={18} />
+            <a 
+              href="https://youtube.com/@aitracmaitracm-w5028" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2.5 bg-[#FF0000] text-white rounded-xl shadow-md hover:scale-110 hover:shadow-lg active:scale-95 transition-all duration-300 flex items-center justify-center" 
+              aria-label="YouTube"
+            >
+              <Youtube size={18} />
             </a>
           </div>
         </div>
