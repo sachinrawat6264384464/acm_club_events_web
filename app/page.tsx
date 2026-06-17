@@ -13,6 +13,7 @@ import { Code2, Cpu, Trophy, Users2, ArrowRight } from "lucide-react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -248,27 +249,47 @@ export default function Home() {
                         Chapters Archive
                       </span>
                       <h2 className="text-3xl md:text-4xl font-extrabold text-acm-dark tracking-tight">
-                        Our Upcoming &amp; Past Events
+                        Our Events
                       </h2>
                       <p className="text-gray-500 text-sm max-w-xl">
                         Click on any card to view its corresponding multi-image photo gallery, details, and schedules.
                       </p>
                     </div>
 
-                    {/* Simple tag indicators */}
-                    <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-gray-500">
-                      <span className="px-3.5 py-2 bg-acm-royal text-white rounded-full">All Events ({eventsData.length})</span>
-                      <span className="px-3.5 py-2 bg-white border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">Hackathons</span>
-                      <span className="px-3.5 py-2 bg-white border border-gray-100 rounded-full hover:bg-gray-50 transition-colors">Workshops</span>
+                    {/* Interactive Filter Pills */}
+                    <div className="flex flex-wrap items-center justify-center gap-2.5 text-xs font-bold">
+                      {["All", "Hackathon", "Workshop", "Competition", "Seminar"].map((cat) => {
+                        const isActive = selectedCategory === cat;
+                        return (
+                          <button
+                            key={cat}
+                            onClick={() => setSelectedCategory(cat)}
+                            className={`px-4 py-2.5 rounded-full transition-all duration-300 active:scale-95 ${
+                              isActive
+                                ? "bg-gradient-to-r from-acm-royal to-acm-sky text-white shadow-md shadow-acm-royal/15"
+                                : "bg-white border border-slate-200/60 text-gray-600 hover:bg-slate-50 hover:text-acm-royal"
+                            }`}
+                          >
+                            {cat === "All" ? "All Events" : `${cat}s`}
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
 
-                  {/* Grid of Events */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {eventsData.map((event, index) => (
-                      <EventCard key={event.id} event={event} index={index} />
-                    ))}
-                  </div>
+                  {/* Grid of Events with smooth dynamic layout transitions */}
+                  <motion.div 
+                    layout
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                  >
+                    <AnimatePresence mode="popLayout">
+                      {eventsData
+                        .filter((event) => selectedCategory === "All" || event.category === selectedCategory)
+                        .map((event, index) => (
+                          <EventCard key={event.id} event={event} index={index} />
+                        ))}
+                    </AnimatePresence>
+                  </motion.div>
                 </div>
               </section>
             </main>

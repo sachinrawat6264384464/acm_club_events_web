@@ -64,7 +64,7 @@ export const eventsData: EventItem[] = [
   {
     id: "webdev-bootcamp",
     title: "Modern Web Bootcamp",
-    category: "Bootcamp",
+    category: "Workshop",
     date: "May 15, 2026",
     shortDesc: "Interactive workshop teaching Next.js, responsive Tailwind CSS layouts, and Framer Motion animations.",
     longDesc: "A complete intensive bootcamp aimed at bringing developers up to speed with modern full-stack web development. The curriculum focused on building fast static sites, managing complex states with React Context, styling fluid components using utility classes, and integrating micro-interactions. Every attendee launched their personal portfolio site by the end of the day.",
@@ -76,6 +76,108 @@ export const eventsData: EventItem[] = [
       "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "ui-ux-sprint",
+    title: "UI/UX Design Sprint",
+    category: "Workshop",
+    date: "June 02, 2026",
+    shortDesc: "Focusing on wireframing, interactive Figma mockups, user research practices, and feedback cycles.",
+    longDesc: "This design-centric sprint was organized to bridge the gap between engineering and visual aesthetics. Mentors walked students through industry standards in Figma layouts, typography scales, accessibility rules (WCAG), and creating fluid components. Team wireframing sessions put these design paradigms to quick tests.",
+    coverImage: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "cloud-devops-summit",
+    title: "Cloud & DevOps Summit",
+    category: "Seminar",
+    date: "June 20, 2026",
+    shortDesc: "Understanding Docker containerization, Kubernetes orchestration, and continuous integration pipelines.",
+    longDesc: "DevOps Summit focused on scalable architectures. Students learned to containerize Next.js projects, set up GitHub Action pipelines for testing, and deploy workloads onto cloud providers. Industry experts led deep panels about zero-downtime updates and monitoring systems.",
+    coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1597839219216-a773cb2473e4?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "game-dev-hack",
+    title: "Game Dev Hackathon",
+    category: "Hackathon",
+    date: "July 08-09, 2026",
+    shortDesc: "A 48-hour build marathon where students create immersive 2D/3D games on Unity and WebGL frameworks.",
+    longDesc: "The Game Dev Hackathon challenged students to write play mechanics, compile graphics, and render sounds under strict time constraints. Featuring active testing booths where peer players evaluated mechanics, the final play sessions gathered massive crowds and showcased incredibly clever concepts.",
+    coverImage: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "blockchain-forum",
+    title: "Blockchain & Web3 Forum",
+    category: "Seminar",
+    date: "July 24, 2026",
+    shortDesc: "Demystifying smart contracts, Ethereum networks, solidity code architectures, and decentralized apps.",
+    longDesc: "A complete panel exploring decentralized ledger solutions. Students got to deploy Solidity contracts onto testnets, configure web3 wallets, and fetch states. Discussions covered security audits, scalable gas models, and practical utility-based dApps.",
+    coverImage: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "coding-arena",
+    title: "Coding Arena Clash",
+    category: "Competition",
+    date: "August 12, 2026",
+    shortDesc: "Speed-running algorithmic challenges covering data structures, dynamic programming, and complexity tests.",
+    longDesc: "The Coding Arena put students' algorithm mastery to ultimate tests. Competing in individual formats, developers solved complex graph structures, cache scheduling setups, and math puzzles. Winners were determined based on completion accuracy and runtime efficiencies.",
+    coverImage: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "iot-home-hack",
+    title: "IoT Smart Hackathon",
+    category: "Hackathon",
+    date: "August 28, 2026",
+    shortDesc: "Building smart microcontroller projects using sensors, local dashboard controls, and real-time feeds.",
+    longDesc: "IoT Smart Hackathon focused on edge computing interfaces. Students configured ESP32 modules, read sensor values, and mapped states onto responsive local web dashboards. Teams completed prototypes of automated garden feeders, smart alarms, and environmental logs.",
+    coverImage: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1557063673-0493e05d49ef?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800"
     ]
   }
 ];

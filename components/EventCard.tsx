@@ -15,50 +15,51 @@ interface EventCardProps {
 export const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-      whileHover={{ y: -8 }}
-      className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-gray-200/80 shadow-sm hover:shadow-xl hover:shadow-acm-royal/5 transition-all duration-300 flex flex-col h-full"
+      layout
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
+      whileHover={{ y: -12, scale: 1.03 }}
+      className="group bg-white rounded-[32px] overflow-hidden border border-slate-100 hover:border-acm-royal/20 shadow-sm hover:shadow-2xl hover:shadow-acm-royal/15 transition-all duration-500 flex flex-col h-full"
     >
-      {/* Event Cover Image Container */}
-      <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+      {/* Event Cover Image Container (Widescreen 16:10 aspect ratio) */}
+      <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-50">
         <Image
           src={event.coverImage}
           alt={event.title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          className="object-cover transition-transform cubic-bezier(0.16, 1, 0.3, 1) duration-700 group-hover:scale-105"
         />
         {/* Sky Blue Category Tag */}
-        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-acm-royal text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
+        <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md text-acm-royal text-[10px] font-black tracking-widest uppercase px-3 py-1.5 rounded-full shadow-md border border-slate-100/50">
           {event.category}
         </div>
       </div>
 
       {/* Card Info */}
-      <div className="p-6 flex-grow flex flex-col justify-between">
-        <div className="space-y-3">
+      <div className="p-5 flex-grow flex flex-col justify-between">
+        <div className="space-y-2.5">
           {/* Date */}
-          <div className="flex items-center text-xs text-gray-500 font-medium space-x-1.5">
+          <div className="flex items-center text-xs text-gray-500 font-semibold space-x-1.5">
             <Calendar size={13} className="text-acm-light" />
             <span>{event.date}</span>
           </div>
 
           {/* Title */}
-          <h3 className="font-bold text-lg text-acm-dark group-hover:text-acm-royal transition-colors leading-snug line-clamp-1">
+          <h3 className="font-extrabold text-lg text-acm-dark group-hover:text-acm-royal transition-colors leading-snug line-clamp-1">
             {event.title}
           </h3>
 
           {/* Short Description */}
-          <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">
+          <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">
             {event.shortDesc}
           </p>
         </div>
 
-        {/* Read More / Action Button */}
-        <div className="pt-6 border-t border-gray-50 mt-6">
+        {/* Action Button */}
+        <div className="pt-4 border-t border-slate-50 mt-4">
           <Link
             href={`/events/${event.id}`}
             className="inline-flex items-center space-x-1.5 text-xs font-bold tracking-wider text-acm-royal uppercase group/btn hover:text-acm-sky transition-colors"
@@ -66,7 +67,7 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
             <span>View Gallery &amp; Details</span>
             <ArrowUpRight
               size={14}
-              className="transform transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
+              className="transform transition-transform duration-300 group-hover/btn:translate-x-0.8 group-hover/btn:-translate-y-0.8"
             />
           </Link>
         </div>
