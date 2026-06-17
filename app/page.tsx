@@ -137,7 +137,7 @@ export default function Home() {
                     className="lg:col-span-6 relative flex justify-center"
                   >
                     {/* Layered Image container */}
-                    <div className="relative w-full max-w-xl aspect-[16/10] rounded-3xl overflow-hidden shadow-2xl group border-4 border-white bg-white">
+                    <div className="relative w-full max-w-xl aspect-[16/10] rounded-3xl overflow-hidden shadow-2xl group border-4 border-acm-royal bg-white">
                       <Image
                         src="/events/slider2.jpeg"
                         alt="AITR ACM Student Tech Workshop"
